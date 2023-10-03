@@ -1,9 +1,9 @@
-   # total = 1
-   # count = 0
- # for i in range(1, 3000):
-   # total = 6 * i
-   # count += 1
-   # print(total, end=" ")
+# total = 1
+# count = 0
+# for i in range(1, 3000):
+# total = 6 * i
+# count += 1
+# print(total, end=" ")
 
 number = 1
 count = 1

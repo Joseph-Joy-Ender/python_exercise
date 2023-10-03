@@ -1,11 +1,11 @@
-#score_counter = 1
-#total = 0
-#average = 0
+# score_counter = 1
+# total = 0
+# average = 0
 
-#while score_counter <= 10:
- #   score = int(input("Enter student score: "))
-  #  total += score
-   #  score_counter += 1
+# while score_counter <= 10:
+#   score = int(input("Enter student score: "))
+#  total += score
+#  score_counter += 1
 # average = total / score_counter
 # print(average)
 

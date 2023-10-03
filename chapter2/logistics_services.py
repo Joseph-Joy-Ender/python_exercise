@@ -1,4 +1,4 @@
-def decide_parcel_amount(delivery_number):
+def decide_parcel_amount(delivery_number: int):
     if 1 < delivery_number > 100:
         raise Exception("Amount must be between 1 and 100")
 
@@ -10,7 +10,6 @@ def decide_parcel_amount(delivery_number):
         return 250
 
     return 500
-
-
-num = int(input("number of delivery"))
-print(decide_parcel_amount(num))
+#
+# num = int(input("number of delivery"))
+# print(decide_parcel_amount(num))

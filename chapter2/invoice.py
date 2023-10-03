@@ -10,7 +10,7 @@ def print_header():
     print("***************************************")
 
 
-def print_content(name_of_item, discounts, deposits):
+def print_content(name_Of_Item, discounts, deposits):
     print("Name of item: ", name_of_item)
     print("Discount: ", discounts) 
     print("Deposit: ", deposits)

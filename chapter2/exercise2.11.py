@@ -1,7 +1,7 @@
 
 number = int(input('Enter five digit integer: '))
 
-sum = 0
+sums = 0
 while number > 0:
     number1 = number % 10
     number = number // 10
