@@ -1,10 +1,13 @@
+from typing import List, Any
+
+
 def largest_element(number):
     largest = 0
     largestElement = []
     for i in number:
         if i > largest:
             largest = i
-        # result = largestElement.append(largest)
+
     return largest
 
 
@@ -47,7 +50,7 @@ def even_positions(evenNumbers):
 
 
 def is_palindrome(string: str):
-    string = string.lower()
+    # string = string.lower()
     if len(string) <= 1:
         return True
     i = 0
@@ -57,9 +60,13 @@ def is_palindrome(string: str):
         return True
 
 
-# odd = [1, 2, 3, 4, 5]
-# oddNumber = odd[1::2]
-# print(oddNumber)
+def concatenating_list(number, character):
+    number = []
+    character = []
+    result = number + character
+    return result
 
-name = 'Lol'
-print(is_palindrome(name))
+
+numbers = [1, 2, 3, 4]
+char = ['a', 'v', 'e', 'j']
+print(concatenating_list(numbers, char))
