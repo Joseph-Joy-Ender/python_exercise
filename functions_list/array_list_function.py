@@ -17,8 +17,8 @@ def element_occurrence(firstNumber, secondNumber):
     return False
 
 
-def reverse_a_list(numbers) -> int:
-    reversed_list = numbers
+def reverse_a_list(number1) -> int:
+    reversed_list = number1
     reversed_list.reverse()
     return reversed_list
 
@@ -58,15 +58,3 @@ def is_palindrome(string: str):
         if string[i] != string[len(string) - i - 1]:
             return False
         return True
-
-
-def concatenating_list(number, character):
-    number = []
-    character = []
-    result = number + character
-    return result
-
-
-numbers = [1, 2, 3, 4]
-char = ['a', 'v', 'e', 'j']
-print(concatenating_list(numbers, char))

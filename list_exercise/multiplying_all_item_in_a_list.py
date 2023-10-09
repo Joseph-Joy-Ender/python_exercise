@@ -3,4 +3,3 @@ product = 1
 for i in list_of_number:
     product = product * i
 print(product)
-

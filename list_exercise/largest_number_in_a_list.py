@@ -4,4 +4,3 @@ for i in list_of_numbers:
     if i > largest:
         largest = i
 print(largest)
-
