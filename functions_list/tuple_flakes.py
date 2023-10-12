@@ -30,5 +30,18 @@ def more_than_one_tuple(tuple5):
         return result
 
 
+my_playlist = []
+names = ["joy", "Joseph", "Ope"]
+name2 = list('Israel')
+name3 = names + name2
+print(name3)
+list_to_tuple = tuple(names)
+print(list_to_tuple)
+tuple_to_list = list(list_to_tuple)
+print(tuple_to_list)
 # tuples5 = (20, 10, 15, 20, 5, 30, 10, 35, 10, 40, 45, 5)
 # print(more_than_one_tuple(tuples5))
+print1 = 1, 2, 3
+print2 = 'a', 'b', 'c'
+print3 = print2 + print1
+print(print3)
