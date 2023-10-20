@@ -1,14 +1,11 @@
-def evenly_placed(creditCardNumber):
+def evenly_placed(creditCardNumber: list):
     total = 0
     index = len(creditCardNumber)
     while index > 0:
         if index % 2 != 0:
             result = (creditCardNumber[index - 1] * 2)
-            if result > 9:
-                total = total + add_numbers_bigger_than_nine(result)
-            else:
-                total = total + result
-                index -= 1
+            total += result
+            index -= 1
     return total
 
 
