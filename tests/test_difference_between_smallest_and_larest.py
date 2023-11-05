@@ -1,5 +1,5 @@
 from unittest import TestCase
-from functions_list.difference_between_smallest_and_larest import difference
+from functions_list.difference_between_smallest_and_largest import difference
 
 
 class Test(TestCase):

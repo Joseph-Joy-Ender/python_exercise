@@ -7,6 +7,3 @@ def list_to_dictionary(strings: list):
         dicts.update({letter: i})
     return dicts
 
-
-# sample_input = ['apple', 'banana', 'coconut']
-# print(list_to_dictionary(sample_input))
