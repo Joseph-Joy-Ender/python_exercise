@@ -2,16 +2,35 @@ import random
 
 
 def first_question():
+    counter = 1
+    score = 0
+    percentage = 0
     number1 = generate_random_number()
     number2 = generate_random_number()
-    while True:
-        answer = int(input(f'How much is {number1} times {number2} '))
-        if answer != number1 * number2:
-            print(possible_response_to_incorrect_answer())
+    while counter <= 10:
+        answer = get_answer(number1, number2)
         if answer == number1 * number2:
+            score = score + 1
             print(possible_response_to_correct_answer())
             number1 = generate_random_number()
             number2 = generate_random_number()
+        counter = counter + 1
+        percentage = (score / counter) * 100
+    percentage_method(percentage)
+
+
+def get_answer(number1, number2):
+    answer = int(input(f'How much is {number1} times {number2} '))
+    if answer != number1 * number2:
+        print(possible_response_to_incorrect_answer())
+    return answer
+
+
+def percentage_method(percentage):
+    if percentage < 75:
+        print("Please ask your teacher for extra help")
+    else:
+        print("Congratulations, you are ready to go to the next level")
 
 
 def generate_random_number():
@@ -48,4 +67,4 @@ def possible_response_to_incorrect_answer():
     return message
 
 
-print(first_question())
+first_question()
