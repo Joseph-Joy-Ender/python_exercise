@@ -14,12 +14,12 @@ class Account:
         self.__validate(pin)
         return self.__balance
 
-    def deposit(self, amount: int):
+    def deposit(self, amount: int) -> None:
         self.__check_sufficient_funds(amount)
         self.__balance += amount
 
     def __validate(self, pin: str):
-        if pin is not self.__pin:
+        if pin != self.__pin:
             raise InvalidPinException("Wrong pin")
 
     def __validate_amount(self, amount: int):
@@ -35,3 +35,13 @@ class Account:
         self.__validate_amount(amount)
         self.__balance -= amount
 
+    def account_number(self) -> str:
+        return self.__number
+
+    def __str__(self):
+        return f"""
+        Your Account details
+        Account Name {self.__name}
+        Account number {self.__number}
+        Account balance {self.__balance}
+        """
