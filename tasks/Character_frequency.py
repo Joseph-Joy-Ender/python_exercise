@@ -7,5 +7,5 @@ def character_frequency(string: str):
     return diction
 
 
-word = 'google.com.niger'
+word = 'semicolon.africa'
 print(character_frequency(word))

@@ -1,9 +1,5 @@
-from typing import List, Any
-
-
 def largest_element(number):
     largest = 0
-    largestElement = []
     for i in number:
         if i > largest:
             largest = i
@@ -11,8 +7,8 @@ def largest_element(number):
     return largest
 
 
-def element_occurrence(firstNumber, secondNumber):
-    if secondNumber in firstNumber:
+def element_occurrence(first_number, second_number):
+    if second_number in first_number:
         return True
     return False
 
@@ -39,13 +35,13 @@ def sum_of_list(lis):
     return totals
 
 
-def odd_positions(oddNumber):
-    odd = oddNumber[1::2]
+def odd_positions(odd_number):
+    odd = odd_number[1::2]
     return odd
 
 
-def even_positions(evenNumbers):
-    even = evenNumbers[::2]
+def even_positions(even_numbers):
+    even = even_numbers[::2]
     return even
 
 

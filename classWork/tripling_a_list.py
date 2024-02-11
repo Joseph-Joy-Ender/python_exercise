@@ -1,5 +1,5 @@
-def triple_a_list(numbersInAList: list, numberOfHowManyTimesYouWannaMultiplyTheNumbersInYourList: int):
-    for i in numbersInAList:
+def triple_a_list(numbers_in_a_list: list, numberOfHowManyTimesYouWannaMultiplyTheNumbersInYourList: int):
+    for i in numbers_in_a_list:
         return 0
 
 
